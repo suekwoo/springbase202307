@@ -23,6 +23,7 @@ public class HomeController {
 				alarmDevice.alarm(s.getName());
 			}		}
 	}	
+
 	
 	public void showCameraImage() {
 		viewer.draw(); //

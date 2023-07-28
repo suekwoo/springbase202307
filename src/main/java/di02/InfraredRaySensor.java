@@ -21,6 +21,7 @@ public class InfraredRaySensor {
 	}
 	
 
+	
 	@Override
 	public String toString() {
 		return "InfraredRaySensor [name=" + name + ", objectFounded=" + objectFounded + "]";

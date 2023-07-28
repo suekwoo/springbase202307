@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 .settings
 target
 src/test
 .classpath
 .project
+=======
+/target/
+.settings
+.classpath
+.project
+/src/test
+>>>>>>> branch 'master' of https://github.com/mskim3578/springbase202307.git

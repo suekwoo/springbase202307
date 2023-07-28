@@ -5,6 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import di02.Executor;
 import di02.HomeController;
+
 import di02.InfraredRaySensor;
 import di02.WorkUnit;
 public class MainConfig {
@@ -25,5 +26,8 @@ public class MainConfig {
 		windowSensor.foundObject(); //windowSensor()   :  objectFounded=true
 	    home.checkSensorAndAlarm();
 	    System.out.println("ok");
-	}
-}
+	}}
+
+
+
+

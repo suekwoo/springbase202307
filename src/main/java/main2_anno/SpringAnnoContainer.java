@@ -5,8 +5,7 @@ import java.util.List;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
+
 
 import di02.AlarmDevice;
 import di02.DisplayMode;
@@ -17,6 +16,8 @@ import di02.MonitorViewer;
 import di02.SnsAlarmDevice;
 import di02.Viewer;
 import di02.Worker;
+
+
 
 @Configuration   //컨테인너 임
 public class SpringAnnoContainer {
@@ -29,7 +30,6 @@ public class SpringAnnoContainer {
 	}
 	
 	@Bean
-	@Scope(value="prototype", proxyMode=ScopedProxyMode.TARGET_CLASS)
 	public Worker  worker() {
 		return new Worker();
 	}
@@ -55,13 +55,6 @@ public class SpringAnnoContainer {
 		return viewer;
 	}
 	
-	@Bean
-	public DisplayMode  displayMode() {
-		DisplayMode  mode  = new DisplayMode();
-		mode.setType("GRID");
-		return mode;
-	}
-	
 	
 	@Bean
 	public InfraredRaySensor windowSensor() {
@@ -72,4 +65,11 @@ public class SpringAnnoContainer {
 		return new InfraredRaySensor("현관센서");
 	}
 	
+	
+	@Bean
+	public DisplayMode  displayMode() {
+		DisplayMode  mode  = new DisplayMode();
+		mode.setType("GRID");
+		return mode;
+	}
 }
