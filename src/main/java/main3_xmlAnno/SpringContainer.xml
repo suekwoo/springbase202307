@@ -18,7 +18,7 @@
  </bean>
  <bean id="doorSensor" class="di03.InfraredRaySensor">
     <constructor-arg value="현관센서" />
-    <qualifier value="intrusionDetection1" />
+    <qualifier value="intrusionDetection" />
  </bean>
  <bean id="lampSensor" class="di03.InfraredRaySensor">
     <constructor-arg value="전등센서" />

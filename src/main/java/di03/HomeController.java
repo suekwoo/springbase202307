@@ -20,7 +20,7 @@ public class HomeController {
 
 	// setter injection
 	@Autowired
-	@Qualifier("intrusionDetection")
+	@Qualifier("intrusionDetection1")
 	/*
 	List<InfraredRaySensor> sensors : 
 	           container에 있는 모든 제네릭객체를 가지고 온다 
