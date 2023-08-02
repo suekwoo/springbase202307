@@ -38,6 +38,13 @@
     <version>1.3.2</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.8.0</version>
+ <!--   <scope>runtime</scope>   지워야함-->
+</dependency>
 
     
     
